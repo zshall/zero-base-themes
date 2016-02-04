@@ -1,0 +1,44 @@
+// ==========================================================================
+// Fonts
+// ==========================================================================
+
+:host-context(.platform-mac) .monospace,
+::shadow :host-context(.platform-mac) .monospace,
+:host-context(.platform-mac) .source-code,
+::shadow :host-context(.platform-mac) .source-code,
+.platform-mac .monospace,
+::shadow .platform-mac .monospace,
+.platform-mac .source-code,
+::shadow .platform-mac .source-code {
+    font-family: @font-monospace-mac !important;
+}
+
+:host-context(.platform-windows) .monospace,
+::shadow :host-context(.platform-windows) .monospace,
+:host-context(.platform-windows) .source-code,
+::shadow :host-context(.platform-windows) .source-code,
+.platform-windows .monospace,
+::shadow .platform-windows .monospace,
+.platform-windows .source-code,
+::shadow .platform-windows .source-code {
+    font-family: @font-monospace-win !important;
+}
+
+:host-context(.platform-linux) .monospace,
+::shadow :host-context(.platform-linux) .monospace,
+:host-context(.platform-linux) .source-code,
+::shadow :host-context(.platform-linux) .source-code,
+.platform-linux .monospace,
+::shadow .platform-linux .monospace,
+.platform-linux .source-code,
+::shadow .platform-linux .source-code, {
+    font-family: @font-monospace-lin !important;
+}
+
+::shadow .source-code, .source-code {
+    font-family: @font-monospace !important;
+}
+
+::shadow .monospace, .monospace {
+    font-family: @font-monospace !important;
+}
